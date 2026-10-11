@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="fluid">
+
+        <div id="tarjeta" class="d-flex justify-content-center">
+            <div class="card border-dark card w-25" style="width: 18rem;">
+                <div class="card-header text-center text-bg-dark fw-bold">
+                    CALCULADORA DE TEMPERATURAS
+                </div>
+                <img src="./assets/temperatura.jpg" class="card-img-top" alt="...">
+
+                <ul id="resultado" class="list-group list-group-flush">
+                    <li class="list-group-item text-center text-dark">
+                            <div class="input-group mb-3">
+                                <input id="celsius" type="text" class="form-control" placeholder="Ingrese T en °C"
+                                    aria-label="Ingrese T en °C" aria-describedby="button-addon2">
+                                <button id="boton" class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">CALCULAR</button>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
