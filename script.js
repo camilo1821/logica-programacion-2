@@ -2,10 +2,10 @@ const celsius = document.getElementById('celsius');
 const boton = document.getElementById('boton');
 const resultado = document.getElementById('resultado');
 
-function agregarResultados(texto) {
+function agregarResultados(nuevasTemperaturas) {
     const li = document.createElement('li');
     li.className = ` list-group-item text-center text-dark resultado`;
-    li.textContent = texto;
+    li.textContent = nuevasTemperaturas;
     resultado.appendChild(li);
 }
 
@@ -15,10 +15,10 @@ boton.addEventListener('click', () => {
 
     document.querySelectorAll('.resultado').forEach(li => li.remove());
 
-    const texto = celsius.value.trim();
-    const grados = Number(texto)
+    const temperaturaIngresada = celsius.value;
+    const grados = Number(temperaturaIngresada)
 
-    if (texto === "" || isNaN(grados)) {
+    if (temperaturaIngresada === "" || isNaN(grados)) {
         agregarResultados("Ingrese una Temperatura válida");
         return;
     }
